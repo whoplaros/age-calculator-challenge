@@ -18,43 +18,44 @@
 	font-family: "Poppins";
 	src: url("assets/fonts/Poppins-Bold.ttf");
 	src: url("assets/fonts/Poppins-Bold.ttf") format("truetype");
-	font-weight: 600;
+	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Poppins";
 	src: url("assets/fonts/Poppins-BoldItalic.ttf");
 	src: url("assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
-	font-weight: 600;
+	font-weight: 700;
 	font-style: italic;
 }
 @font-face {
 	font-family: "Poppins";
 	src: url("assets/fonts/Poppins-ExtraBold.ttf");
 	src: url("assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
-	font-weight: 700;
+	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Poppins";
 	src: url("assets/fonts/Poppins-ExtraBoldItalic.ttf");
 	src: url("assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
-	font-weight: 700;
+	font-weight: 800;
 	font-style: italic;
 }
 :root {
-	--black: #151515;
-	--purple: #854dff;
-	--light-grey: #f0f0f0;
-	--grey: #716f6f;
-	--red: #ff5959;
-	--line: #dcdcdc;
+	--black: hsl(0, 0%, 8%);
+	--purple: hsl(259, 100%, 65%);
+	--light-grey: hsl(0, 0%, 86%);
+	--grey: hsl(0, 1%, 44%);
+	--red: hsl(0, 100%, 67%);
+	--line: hsl(0, 0%, 94%);
+	--white: hsl(0, 0%, 100%);
 	--drop-shadow-1: 0px 32px 56px hsla(0, 0%, 0%, 0.15);
 	--drop-shadow-2: 0px 32px 56px hsla(15, 51%, 36%, 0.1);
 }
 body {
 	font-family: Poppins, sans-serif;
-	background-color: var(--light-grey);
+	background-color: var(--line);
 }
 * {
 	box-sizing: border-box;
@@ -69,22 +70,28 @@ body {
 	width: 90%;
 }
 .calculator-box {
-	background-color: #ffffff;
+	background-color: var(--white);
 	border-radius: 24px 24px 200px 24px;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1rem;
+}
+.calculator-box--container {
+	margin: 3rem 1.5rem;
 }
 header {
 	color: var(--grey);
 }
 form label {
 	font-size: 0.75rem;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 3.5px;
 	font-style: normal;
 	text-transform: uppercase;
 }
 form input {
 	font-size: 1.25rem;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 3px;
 	font-style: normal;
 	width: 5.4rem;
@@ -92,14 +99,34 @@ form input {
 	border-radius: 8px;
 	border: 1px solid var(--line);
 }
+button {
+	background-color: var(--purple);
+	border-radius: 216px;
+	width: 4rem;
+	height: 4rem;
+	padding: 20px;
+	border: none;
+}
+button svg {
+	width: 24px;
+	height: 24px;
+}
+button svg g {
+	stroke-width: 4px;
+}
+button span {
+	display: none;
+}
 main {
 	font-size: 3.5rem;
 	font-style: italic;
+	font-weight: 800;
 	line-height: 110%;
-	letter-spacing: -2%;
+	letter-spacing: -1.12px;
 }
 .header--form-inputs-container {
 	display: flex;
+	width: 100%;
 	flex-direction: row;
 }
 .input-wrapper {
@@ -107,6 +134,13 @@ main {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+.header--form-button-container {
+	display: block;
+	width: 100%;
+
+	position: relative;
+}
+
 .calculated-numbers {
 	color: var(--purple);
 }

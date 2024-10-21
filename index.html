@@ -16,67 +16,79 @@
 	<body>
 		<div class="project-container">
 			<div class="calculator-box">
-				<header>
-					<form
-						action="/submit"
-						class="birthdate-form"
-						id="birthdate-form"
-						novalidate
-					>
-						<div class="header--form-inputs-container">
-							<div class="input-wrapper">
-								<label for="birthday-day">Day</label>
-								<input
-									type="number"
-									placeholder="DD"
-									name="birthday-day"
-									id="birthday-day"
-									required
-								/>
+				<div class="calculator-box--container">
+					<header>
+						<form
+							action="/submit"
+							class="birthdate-form"
+							id="birthdate-form"
+							novalidate
+						>
+							<div class="header--form-inputs-container">
+								<div class="input-wrapper">
+									<label for="birthday-day">Day</label>
+									<input
+										type="number"
+										placeholder="DD"
+										name="birthday-day"
+										id="birthday-day"
+										required
+									/>
+								</div>
+								<div class="input-wrapper">
+									<label for="birthday-month">Month</label>
+									<input
+										type="number"
+										placeholder="MM"
+										name="birthday-month"
+										id="birthday-month"
+										required
+									/>
+								</div>
+								<div class="input-wrapper">
+									<label for="birthday-year">Year</label>
+									<input
+										type="number"
+										placeholder="YYYY"
+										name="birthday-year"
+										id="birthday-year"
+										required
+									/>
+								</div>
 							</div>
-							<div class="input-wrapper">
-								<label for="birthday-month">Month</label>
-								<input
-									type="number"
-									placeholder="MM"
-									name="birthday-month"
-									id="birthday-month"
-									required
-								/>
+							<div class="header--form-button-container">
+								<button>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="46"
+										height="44"
+										viewBox="0 0 46 44"
+									>
+										<g fill="none" stroke="#FFF" stroke-width="2">
+											<path
+												d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+											/>
+										</g>
+									</svg>
+									<span>Enter</span>
+								</button>
 							</div>
-							<div class="input-wrapper">
-								<label for="birthday-year">Year</label>
-								<input
-									type="number"
-									placeholder="YYYY"
-									name="birthday-year"
-									id="birthday-year"
-									required
-								/>
-							</div>
-						</div>
-						<div class="header--button-container">
-							<button>
-								<img
-									src="src/assets/images/icon-arrow.svg"
-									alt="submit arrow"
-								/>
-								<span>Enter</span>
-							</button>
-						</div>
-					</form>
-				</header>
-				<main>
-					<h1>
-						<span class="calculated-numbers" id="numbers-years">--</span>
-						years
-
-						<span class="calculated-numbers" id="numbers-months">--</span>
-						months
-
-						<span class="calculated-numbers" id="numbers-days">--</span> days
-					</h1>
-				</main>
+						</form>
+					</header>
+					<main>
+						<h1>
+							<span class="calculated-numbers" id="numbers-years">38</span>
+							years
+						</h1>
+						<h1>
+							<span class="calculated-numbers" id="numbers-months">3</span>
+							months
+						</h1>
+						<h1>
+							<span class="calculated-numbers" id="numbers-days">26</span> days
+						</h1>
+					</main>
+				</div>
 			</div>
 			<footer>
 				<div class="attribution">
