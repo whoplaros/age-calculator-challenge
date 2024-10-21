@@ -1,3 +1,86 @@
+/*Poppins font regular */
+@font-face {
+	font-family: "Poppins";
+	src: url("assets/fonts/Poppins-Regular.ttf");
+	src: url("assets/fonts/Poppins-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Poppins";
+	src: url("assets/fonts/Poppins-Italic.ttf");
+	src: url("assets/fonts/Poppins-Italic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
+}
+/*Poppins font bold */
+@font-face {
+	font-family: "Poppins";
+	src: url("assets/fonts/Poppins-Bold.ttf");
+	src: url("assets/fonts/Poppins-Bold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Poppins";
+	src: url("assets/fonts/Poppins-BoldItalic.ttf");
+	src: url("assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
+	font-weight: 600;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Poppins";
+	src: url("assets/fonts/Poppins-ExtraBold.ttf");
+	src: url("assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Poppins";
+	src: url("assets/fonts/Poppins-ExtraBoldItalic.ttf");
+	src: url("assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+	font-weight: 700;
+	font-style: italic;
+}
+:root {
+	--black: #151515;
+	--purple: #854dff;
+	--light-grey: #f0f0f0;
+	--grey: #716f6f;
+	--red: #ff5959;
+	--line: #dcdcdc;
+	--drop-shadow-1: 0px 32px 56px hsla(0, 0%, 0%, 0.15);
+	--drop-shadow-2: 0px 32px 56px hsla(15, 51%, 36%, 0.1);
+}
+h1 {
+	font-family: Poppins, sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	line-height: 110%;
+	letter-spacing: -2%;
+	font-size: 6.5rem;
+}
+h2 {
+	font-family: Poppins, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 2rem;
+	letter-spacing: 1%;
+}
+h3 {
+	font-family: Poppins, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 0.88rem;
+	letter-spacing: 25%;
+}
+body {
+	font-family: Poppins, sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 0.88rem;
+	letter-spacing: 0%;
+}
 .attribution {
 	font-size: 11px;
 	text-align: center;
