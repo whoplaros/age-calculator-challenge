@@ -14,21 +14,78 @@
 		<link rel="stylesheet" href="src/style.css" />
 	</head>
 	<body>
-		<h3>Day</h3>
-		<h2>DD</h2>
-		<h3>Month</h3>
-		<h2>MM</h2>
-		<h3>Year</h3>
-		<h2>YYYY</h2>
-		<h1>-- years</h1>
-		<h1>-- months</h1>
-		<h1>-- days</h1>
+		<div class="project-container">
+			<div class="calculator-box">
+				<header>
+					<form
+						action="/submit"
+						class="birthdate-form"
+						id="birthdate-form"
+						novalidate
+					>
+						<div class="header--form-inputs-container">
+							<div class="input-wrapper">
+								<label for="birthday-day">Day</label>
+								<input
+									type="number"
+									placeholder="DD"
+									name="birthday-day"
+									id="birthday-day"
+									required
+								/>
+							</div>
+							<div class="input-wrapper">
+								<label for="birthday-month">Month</label>
+								<input
+									type="number"
+									placeholder="MM"
+									name="birthday-month"
+									id="birthday-month"
+									required
+								/>
+							</div>
+							<div class="input-wrapper">
+								<label for="birthday-year">Year</label>
+								<input
+									type="number"
+									placeholder="YYYY"
+									name="birthday-year"
+									id="birthday-year"
+									required
+								/>
+							</div>
+						</div>
+						<div class="header--button-container">
+							<button>
+								<img
+									src="src/assets/images/icon-arrow.svg"
+									alt="submit arrow"
+								/>
+								<span>Enter</span>
+							</button>
+						</div>
+					</form>
+				</header>
+				<main>
+					<h1>
+						<span class="calculated-numbers" id="numbers-years">--</span>
+						years
 
-		<div class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
+						<span class="calculated-numbers" id="numbers-months">--</span>
+						months
+
+						<span class="calculated-numbers" id="numbers-days">--</span> days
+					</h1>
+				</main>
+			</div>
+			<footer>
+				<div class="attribution">
+					Challenge by
+					<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+						>Frontend Mentor</a
+					>. Coded by <a href="#">Your Name Here</a>.
+				</div>
+			</footer>
 		</div>
 		<script src="src/index.js"></script>
 	</body>
