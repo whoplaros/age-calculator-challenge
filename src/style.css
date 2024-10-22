@@ -74,10 +74,12 @@ body {
 	border-radius: 24px 24px 200px 24px;
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 1rem;
+	margin: auto auto 1rem;
+	overflow-x: hidden;
 }
 .calculator-box--container {
 	margin: 3rem 1.5rem;
+	position: relative;
 }
 header {
 	color: var(--grey);
@@ -94,7 +96,6 @@ form input {
 	font-weight: 700;
 	letter-spacing: 3px;
 	font-style: normal;
-	width: 5.4rem;
 	padding: 0.75rem 2.85rem 0.75rem 1rem;
 	border-radius: 8px;
 	border: 1px solid var(--line);
@@ -117,7 +118,7 @@ button svg g {
 button span {
 	display: none;
 }
-main {
+h1 {
 	font-size: 3.5rem;
 	font-style: italic;
 	font-weight: 800;
@@ -125,20 +126,24 @@ main {
 	letter-spacing: -1.12px;
 }
 .header--form-inputs-container {
+	position: relative;
 	display: flex;
 	width: 100%;
 	flex-direction: row;
+	justify-content: space-between;
 }
 .input-wrapper {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
+	justify-content: left;
 }
 .header--form-button-container {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 	width: 100%;
-
-	position: relative;
 }
 
 .calculated-numbers {
@@ -162,7 +167,7 @@ main {
 	form input {
 		font-size: 2rem;
 	}
-	main {
+	h1 {
 		font-size: 6.5rem;
 	}
 }
