@@ -24,3 +24,5 @@ function calculateAge() {
 
 	console.log(day, month, year);
 }
+const button = document.getElementById("enter");
+button.addEventListener("click", calculateAge);
