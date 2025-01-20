@@ -15,7 +15,7 @@ function calculateAge(event) {
 	var year2 = date.getFullYear();
 
 	// Array for days in each month
-	var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+	var monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 	//Adjust for leap year
 	if ((year2 % 4 === 0 && year2 % 100 !== 0) || year2 % 400 === 0) {
@@ -23,7 +23,7 @@ function calculateAge(event) {
 	}
 	// Calculate days, months, and years
 	if (day1 > day2) {
-		day2 + monthDays[month2 - 1];
+		day2 += monthDays[(month2 - 2 + 12) % 12]; // Adjust for previous month
 		month2 -= 1;
 	}
 	if (month1 > month2) {
@@ -39,10 +39,7 @@ function calculateAge(event) {
 	document.getElementById("numbers-years").textContent = years;
 	document.getElementById("numbers-months").textContent = months;
 	document.getElementById("numbers-days").textContent = days;
-
-	//log to console for debugging
-	console.log(`Age: ${years} years, ${months} months, ${days} days`);
 }
 //attach event listener to the form submit event
-const button = document.getElementById("birthdate-form");
+const form = document.getElementById("birthdate-form");
 form.addEventListener("submit", calculateAge);
